@@ -1,0 +1,5 @@
+---
+- hosts: all
+  name: "copyingfile"
+  tasks:
+   - copy: src=/etc/hosts dest=/tmp/
