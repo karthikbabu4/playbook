@@ -1,0 +1,9 @@
+---
+- hosts: all
+  remote_user: babu
+  become: yes
+  become_user: root
+  sudo: yes
+  tasks:
+   - name: Install httpd
+     package: name=httpd state=absent
